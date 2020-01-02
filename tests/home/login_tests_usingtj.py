@@ -1,5 +1,5 @@
 """
-Tests for Login Page
+Tests for Login Page using test-junkie
 """
 
 from test_junkie.decorators import test, Suite, afterTest
