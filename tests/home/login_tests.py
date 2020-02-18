@@ -33,7 +33,7 @@ class LoginTests(unittest.TestCase):
         self.log.info("*#" * 20)
         self.lp.logout()
         self.lp.clickLoginLink()
-        self.lp.login("test@email.com", "abcabcabc")
+        self.lp.login("sidb@mailinator.com", "abcabcabc")
         result = self.lp.verifyLoginFailed()
         assert result == True
 
@@ -49,7 +49,7 @@ class LoginTests(unittest.TestCase):
         self.log.info("*#" * 20)
         self.lp.logout()
         self.lp.clickLoginLink()
-        self.lp.login("test@email.com", "abcabc")
+        self.lp.login("sidb@mailinator.com", "abcabc")
         result1 = self.lp.verifyLoginTitle()
         self.ts.mark(result1, "Title Verification")
         result2 = self.lp.verifyLoginSuccessful()
